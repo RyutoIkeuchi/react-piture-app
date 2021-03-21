@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function App() {
+export  const App =()=> {
   const [images, setImages] = useState([]);
   const [text, setText] = useState('');
-  const [query, setQuery] = useState('apple');
+  const [query, setQuery] = useState('soccer');
 
   useEffect(() => {
     console.log('useEffectが走りました。')
@@ -31,6 +31,7 @@ function App() {
             type="text"
             onChange={e => setText(e.target.value)}
             value={text}
+            placeholder="見たい写真を入力してください"
           />
           <button type="submit">
             Search
@@ -48,6 +49,10 @@ function App() {
                   {image.alt_description}
                 </div>
               </div>
+              <div className="card-name">
+                <img src={image.user.profile_image.small} className="card-thumb" alt="" />
+                <p className="card-author">{image.user.first_name}</p>
+              </div>
             </div>
           ))
         }
@@ -55,5 +60,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

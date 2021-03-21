@@ -28,18 +28,20 @@ button {
 }
 
 .container {
+  margin-left:40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2%;
+  gap: 3%;
 }
 
 .card {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  height: 400px;
+  height: 300px;
   width: 400px;
-  overflow: scroll;
+  overflow: hidden;
+  position: relative;
 }
 .card-img {
   border-radius: 5px 5px 0 0;
@@ -48,12 +50,40 @@ button {
 }
 
 .card-content {
-  padding: 20px;
+  height: 80px;
+  width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
 }
 
 .card-title {
-  font-size: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
   text-align: center;
   color: #333;
+}
+
+.card-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.card-author {
+  color: #fff;
+  line-height: 1.5px;
+  margin-left: 10px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.card-thumb {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }
