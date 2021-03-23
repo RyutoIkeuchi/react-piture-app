@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-export  const App =()=> {
+export  default function App() {
   const [images, setImages] = useState([]);
   const [text, setText] = useState('');
   const [query, setQuery] = useState('soccer');
