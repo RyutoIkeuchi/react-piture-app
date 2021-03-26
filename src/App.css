@@ -1,14 +1,24 @@
-.main {
-  margin-top: 40px;
+.header {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.main { 
   margin-bottom: 40px;
   text-align: center;
+  padding: 40px 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(left, #BDBFBA 4%, #5A5C5B 98%), -webkit-linear-gradient(16deg, rgba(255, 255, 255, 0.5) 54%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(90deg, #BDBFBA 4%, #5A5C5B 98%), linear-gradient(74deg, rgba(255, 255, 255, 0.5) 54%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: multiply;
 }
 
 input {
-  border: 3px solid #32e17c;
   height: 40px;
-  width: 250px;
-  border-radius: 30px;
+  width: 450px;
   padding: 0px 10px;
   font-size: 18px;
 }
@@ -17,12 +27,14 @@ input:focus {
   outline: 0;
 }
 
+.example {
+  color: #ccc;
+}
+
 button {
   margin-left: 10px;
   width: 80px;
   height: 40px;
-  background-color: #32e17c;
-  border-radius: 5px;
   border-style: none;
   color: white;
 }
@@ -87,3 +99,4 @@ button {
   width: 35px;
   height: 35px;
 }
+
