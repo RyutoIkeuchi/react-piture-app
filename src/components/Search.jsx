@@ -1,20 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-export const Search = ({ setImages }) => {
+export const Search = ({setQuery}) => {
 	const [text, setText] = useState('');
-	const [query, setQuery] = useState('soccer');
-
-	useEffect(() => {
-		console.log('useEffect');
-		fetch(
-			`https://api.unsplash.com/search/photos?query=${query}&client_id=${process.env.REACT_APP_CLIENT_ID}`
-		)
-			.then((Response) => Response.json())
-			.then((data) => {
-				console.log(data);
-				setImages(data.results);
-			});
-	}, [query]);
 
 	const onSubmit = (e) => {
 		e.preventDefault();
