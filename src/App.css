@@ -5,14 +5,26 @@
   color: #ccc;
 }
 
-.main { 
+.main {
   margin-bottom: 40px;
   text-align: center;
   padding: 40px 0;
   height: 100%;
   width: 100%;
-  background: -webkit-linear-gradient(left, #BDBFBA 4%, #5A5C5B 98%), -webkit-linear-gradient(16deg, rgba(255, 255, 255, 0.5) 54%, rgba(0, 0, 0, 0.5) 100%);
-  background: linear-gradient(90deg, #BDBFBA 4%, #5A5C5B 98%), linear-gradient(74deg, rgba(255, 255, 255, 0.5) 54%, rgba(0, 0, 0, 0.5) 100%);
+  background: -webkit-linear-gradient(left, #bdbfba 4%, #5a5c5b 98%),
+    -webkit-linear-gradient(16deg, rgba(255, 255, 255, 0.5) 54%, rgba(
+            0,
+            0,
+            0,
+            0.5
+          )
+          100%);
+  background: linear-gradient(90deg, #bdbfba 4%, #5a5c5b 98%),
+    linear-gradient(
+      74deg,
+      rgba(255, 255, 255, 0.5) 54%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
   background-blend-mode: multiply;
 }
 
@@ -40,7 +52,7 @@ button {
 }
 
 .container {
-  margin-left:40px;
+  margin-left: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3%;
@@ -99,4 +111,3 @@ button {
   width: 35px;
   height: 35px;
 }
-
