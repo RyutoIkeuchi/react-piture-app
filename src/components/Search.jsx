@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const Search = ({setQuery}) => {
+export const Search = ({ setQuery }) => {
 	const [text, setText] = useState('');
 
 	const onSubmit = (e) => {
